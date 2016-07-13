@@ -1,6 +1,6 @@
 # maberger.com
 
-Personal website for [http://maberger.com/](http://maberger.com/) built with [Jekyll](http://jekyllrb.com/) and hosted on [GitHub Pages](https://pages.github.com/).
+Personal website for [http://kamaths.github.io/](http://kamaths.github.io/) built with [Jekyll](http://jekyllrb.com/) and hosted on [GitHub Pages](https://pages.github.com/).
 
 ## Requirements
 
@@ -14,6 +14,5 @@ gem install github pages
 jekyll serve
 ```
 
-## License
-
-Data in [_data/resume.json](_data/resume.json) and posts in the [_posts/](_posts/) directory are copyrighted by [Mark Berger](http://maberger.com "Mark Berger's Website"). All other content is released under the [MIT License](http://www.opensource.org/licenses/MIT).
+## References
+The template is used from [blog](https://github.com/mark-berger/mark-berger.github.io).
