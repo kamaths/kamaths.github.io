@@ -11,7 +11,7 @@ url: http://kamaths.github.io
 # permalink: /:categories/:title/
 permalink: pretty
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 # highlighter: rouge
 sass:
   sass_dir: _sass
