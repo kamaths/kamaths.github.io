@@ -1,3 +1,27 @@
-name: Hank Quinlan, Horrible Cop
-markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+# Jekyll Settings
+excerpt_separator: <!--more-->
+exclude: ["CNAME", "README.md", "LICENSE"]
+paginate: 5
+paginate_path: ":num"
+permalink: pretty
+sass:
+    style: :compressed
+
+# Gems
+gems:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Custom Variables
+analytics: #100929437
+author:
+  email: "&#115;&#104;&#114;&#117;&#116;&#105;&#107;&#097;&#109;&#097;&#116;&#104;&#051;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"
+  github: "kamaths"
+  linkedin: "shrutikamath"
+  name: "Shruti Kamath"
+  uri: #"http://maberger.com"
+description: "Everthing I love to do"
+title: "Shruti Kamath"
+url:
+img: /images/svk.jpg

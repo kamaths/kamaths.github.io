@@ -1,9 +1,32 @@
 ---
 layout: default
-title: Hank Quinlan, Horrible Cop
 ---
-<div class="blurb">
-	<h1>Hi there, I'm Hank Quinlan!</h1>
-	<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-</div><!-- /.blurb -->
-
+<h1>Recent Posts</h1>
+{% for post in paginator.posts %}
+{% include post-preview.html %}
+{% endfor %}
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  <div class="paginate-left">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">← Prev</a>
+  {% endif %}
+  </div>
+  <div class="paginate-center">
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      {{ page }}
+    {% elsif page == 1 %}
+      <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+  </div>
+  <div class="paginate-right">
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next →</a>
+  {% endif %}
+  </div>
+</div>
+{% endif %}
