@@ -1,5 +1,3 @@
-# maberger.com
-
 Personal website for [http://kamaths.github.io/](http://kamaths.github.io/) built with [Jekyll](http://jekyllrb.com/) and hosted on [GitHub Pages](https://pages.github.com/).
 
 ## Requirements
