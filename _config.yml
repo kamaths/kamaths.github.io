@@ -1,27 +1,59 @@
-# Jekyll Settings
-excerpt_separator: <!--more-->
-exclude: ["README.md", "LICENSE"]
-paginate: 5
-paginate_path: ":num"
-permalink: pretty
-sass:
-    style: :compressed
+# Site wide configuration
 
-# Gems
+title: Shruti's Blog
+locale: en_US
+url: http://localhost:4000
+#url: http://kamaths.github.io
+
+
+# Jekyll configuration
+
+# permalink: /:categories/:title/
+permalink: pretty
+markdown: kramdown
+highlighter: pygments
+# highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: compressed
 gems:
-  - jekyll-feed
-  - jekyll-paginate
   - jekyll-sitemap
 
-# Custom Variables
-analytics: #100929437
-author:
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+
+# Site owner
+owner:
+  name: Shruti Kamath
+  avatar: bio-photo.png
+  bio: "Everything I love to do"
   email: "&#115;&#104;&#114;&#117;&#116;&#105;&#107;&#097;&#109;&#097;&#116;&#104;&#051;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"
-  github: "kamaths"
-  linkedin: "shrutikamath"
-  name: "Shruti Kamath"
-  uri: #"http://maberger.com"
-description: "Everthing I love to do"
-title: "Shruti Kamath"
-url:
-img: /images/svk.jpg
+  disqus-shortname: shrutikamaths
+  twitter: 
+  facebook: 
+  google:
+    plus: 
+    analytics: UA-80713638-1
+    verify: 
+    ad-client: 
+    ad-slot: 
+    show-google-ads: false
+  bing-verify: 
+  github: kamaths
+  stackoverflow: 
+  linkedin: shrutikamath
+  instagram: 
+  lastfm:
+  tumblr:
+  pinterest:
+  foursquare:
+  steam:
+  dribbble:
+
+include: [".htaccess"]
+exclude: ["vendor", "lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
