@@ -52,7 +52,7 @@
           {% include _author-bio.html %}
         </div>
         <p class="byline"><strong>{{ page.title }}</strong> was published on <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} and last modified on <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %}.</p>
-        
+
       </footer>
     </div><!-- /.article-wrap -->
   {% if site.owner.disqus-shortname and page.comments == true %}
@@ -63,10 +63,12 @@
 
 <div class="footer-wrap">
   <div class="related-articles">
-  <h4>You might also enjoy <small class="pull-right">(<a href="{{ site.url }}/posts/">View all posts</a>)</small></h4>
+  <h4>You might also enjoy <small class="pull-right">(<a href="{{ site.url }}/posts/{{page.category}}">View all posts</a>)</small></h4>
     <ul>
     {% for post in site.related_posts limit:3 %}
-      <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+      {% if post.category contains page.category %}
+        <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+      {% endif %}
     {% endfor %}
     </ul>
     <hr />
@@ -76,7 +78,7 @@
   </footer>
 </div><!-- /.footer-wrap -->
 
-{% include _scripts.html %}	        
+{% include _scripts.html %}
 
 </body>
 </html>

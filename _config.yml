@@ -2,8 +2,8 @@
 
 title: Shruti's Blog
 locale: en_US
-#url: http://localhost:4000
-url: http://kamaths.github.io
+url: http://localhost:4000
+#url: http://kamaths.github.io
 
 
 # Jekyll configuration
@@ -34,7 +34,7 @@ owner:
   bio: "Everything I love to do"
   email: "&#115;&#104;&#114;&#117;&#116;&#105;&#107;&#097;&#109;&#097;&#116;&#104;&#051;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"
   disqus-shortname: shrutikamaths
-  twitter:
+  twitter: shruticu
   facebook:
   google:
     plus:
