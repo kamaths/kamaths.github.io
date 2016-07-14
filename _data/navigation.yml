@@ -4,7 +4,10 @@
   url: /about/
 
 - title: Posts
-  url: /posts/
+  url: /posts/tech/
+
+- title: Hikes
+  url: /posts/hikes/
 
 - title: RSS
   url: /feed.xml

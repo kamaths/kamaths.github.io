@@ -2,8 +2,8 @@
 
 title: Shruti's Blog
 locale: en_US
-#url: http://localhost:4000
-url: http://kamaths.github.io
+url: http://localhost:4000
+#url: http://kamaths.github.io
 
 
 # Jekyll configuration
@@ -34,26 +34,45 @@ owner:
   bio: "Everything I love to do"
   email: "&#115;&#104;&#114;&#117;&#116;&#105;&#107;&#097;&#109;&#097;&#116;&#104;&#051;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"
   disqus-shortname: shrutikamaths
-  twitter: 
-  facebook: 
+  twitter:
+  facebook:
   google:
-    plus: 
+    plus:
     analytics: UA-80713638-1
-    verify: 
-    ad-client: 
-    ad-slot: 
+    verify:
+    ad-client:
+    ad-slot:
     show-google-ads: false
-  bing-verify: 
+  bing-verify:
   github: kamaths
-  stackoverflow: 
+  stackoverflow:
   linkedin: shrutikamath
-  instagram: 
+  instagram:
   lastfm:
   tumblr:
   pinterest:
   foursquare:
   steam:
   dribbble:
+
+defaults:
+
+  # Blog Articles
+  - scope:
+      path: _posts/tech
+      type: posts
+    values:
+      layout: tech-index
+      category: tech
+
+  - scope:
+      path: _posts/hikes
+      type: posts
+    values:
+      layout: hike-index
+      category: hikes
+
+
 
 include: [".htaccess"]
 exclude: ["vendor", "lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
