@@ -12,7 +12,6 @@ url: http://localhost:4000
 permalink: pretty
 markdown: kramdown
 highlighter: rouge
-# highlighter: rouge
 sass:
   sass_dir: _sass
   style: compressed
@@ -47,7 +46,7 @@ owner:
   github: kamaths
   stackoverflow:
   linkedin: shrutikamath
-  instagram:
+  instagram: shrutivkamath
   lastfm:
   tumblr:
   pinterest:
@@ -58,13 +57,14 @@ owner:
 defaults:
 
   # Blog Articles
+  ## Tech
   - scope:
       path: _posts/tech
       type: posts
     values:
       layout: tech-index
       category: tech
-
+  ## Hikes
   - scope:
       path: _posts/hikes
       type: posts
