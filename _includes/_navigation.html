@@ -12,15 +12,15 @@
                     {% else %}
                         {% assign domain = site.url %}
                     {% endif %}
-                    
-                    {% if link.title == "RSS" %}
+
+                    {% if link.title == "Feed" %}
                         {% assign fa-icon = 'fa fa-rss' %}
                     {% elsif link.url contains 'http' %}
                         {% assign fa-icon = 'fa fa-external-link' %}
                     {% else %}
                         {% assign fa-icon = '' %}
                     {% endif %}
-                    <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{% if link.title != "RSS" %}{{ link.title }} {% endif %}<i class="{{ fa-icon }}"></i></a></li>
+                    <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{% if link.title != "Feed" %}{{ link.title }} {% endif %}<i class="{{ fa-icon }}"></i></a></li>
                 {% endfor %}
 		    </ul>
 		</nav>
