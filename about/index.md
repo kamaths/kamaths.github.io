@@ -16,6 +16,6 @@ Computer Science. I did my B.E. from [R.V College of Engineering](http://www.rvc
 
 I am particularly interested in building scalable machine learning systems.
 
-I have been learning so much from online tech community and in this blog I hope to share content through some of the projects that I do for fun and learnings from being in the tech community!
+I have been learning so much from online tech community and in this [blog](/posts/tech) I hope share content through some of the projects that I do for fun and learnings from being in the tech community!
 
-Also, I enjoy exploring the outdoor, particularly through hiking. Washington is so beautiful surrounded by the Pacific Cascades mountains. Here, you will also find some of my experiences and tips on hikes I have been on in Washington.
+Also, I enjoy exploring the outdoor, particularly through hiking. Washington is so beautiful surrounded by the Pacific Cascades mountains. Here, you will also find some of my experiences and tips on [hikes](/posts/hikes) I have been on in Washington.
