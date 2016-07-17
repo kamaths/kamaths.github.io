@@ -72,6 +72,6 @@ Setup
 * Similarly, to add comments, register your website with [Disqus](https://disqus.com/admin/universalcode/). Add the disqus short name in ```_config.yml```. The script in ```_disqus_comments.html```.
 * I got the icons and other UI components in ```_sass``` and ```assets``` from the Minimal Mistakes theme.
 * `about` contains the markdown page which the layout for about page.
-* Similarly, the content in each of the `_posts` gets substituted in the layout `post` where `{{content}}` is present. 
+* Similarly, the content in each of the `_posts` gets substituted in the layout `post` where ```{ {  content} }``` is present. 
 
 Now once you are ready, with a simple ```git push``` to your main repo, your website is live.
