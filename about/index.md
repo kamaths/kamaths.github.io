@@ -2,10 +2,10 @@
 layout: page
 title: About
 tags: [about, Shruti Kamath]
-modified: 7-15-2016
+modified: 7-16-2016
 comments: false
 image:
-  feature: clojure_honeycomb.png
+  feature: cover-photo.png
 ---
 Hello!
 
